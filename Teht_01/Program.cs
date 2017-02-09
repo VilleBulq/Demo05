@@ -19,7 +19,7 @@ namespace Teht_01
             kaverit.AddPerson(person1);
             kaverit.AddPerson(person2);
             // Get one person
-            Person ukki = kaverit.GetPerson(0);
+            Person ukki = kaverit.GetPerson(10);
             Console.WriteLine(ukki.ToString());
             if(ukki != null) {
                 Console.WriteLine(ukki.ToString());
