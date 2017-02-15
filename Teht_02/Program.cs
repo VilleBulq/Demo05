@@ -17,6 +17,7 @@ namespace Teht_02
             levy.AddSong(biisi2);
             Console.WriteLine(levy.ToString());
             levy.SongList();
+            //d
 
         }
     }
