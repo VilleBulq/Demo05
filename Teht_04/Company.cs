@@ -15,6 +15,9 @@ namespace Teht_04
         public void Hire(string name) {
             employees.Add(new Employees(name));
         }
+        public void Fire() {
+            employees.RemoveAt(employees.Count);
+        }
         StringBuilder lista = new StringBuilder();
         public void ShowEmps()
         {
