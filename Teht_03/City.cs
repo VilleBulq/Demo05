@@ -8,6 +8,9 @@ namespace Teht_03
 {
     class City
     {
+       public City() {
+
+       }
         public List<Neighborhood> neighborhood = new List<Neighborhood>();
         public string Name { get; set; }
         public void ListNeigh() {
@@ -15,10 +18,15 @@ namespace Teht_03
                 Console.WriteLine(neigh.ToString());
             }
         }
+        public City(string name) {
+            Name = name;
+        }
         public void AddNeigh(Neighborhood neigh) {
             neighborhood.Add(neigh);
+            
         }
         public void ShowNeigh() {
+            Console.WriteLine("City: " + Name);
         foreach(Neighborhood neigh in neighborhood) {
                 Console.WriteLine(neigh.ToString());
         }

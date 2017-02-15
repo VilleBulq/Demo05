@@ -10,20 +10,23 @@ namespace Teht_03
     {
         public List<Building> building = new List<Building>();
         public string Name { get; set; }
-        
-        public void ShowB()
-        {
-            foreach (Building build in building)
-            {
-                Console.WriteLine(build.ToString());
-            }
+
+        public Neighborhood(string name) {
+            Name = name;
         }
-        public void Addbuilding(Building build) {
+
+        
+        public void AddB(Building build) {
             building.Add(build);
         }
+
         public override string ToString()
         {
-            return "Neighborhood name " + Name;
+        StringBuilder buildlist = new StringBuilder();
+        foreach(Building build in building) {
+                buildlist.Append("\n\r - Building " + build.ToString());
+        }
+            return " Neighborhood " + Name + buildlist.ToString();
         }
     }
     }
